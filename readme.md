@@ -13,7 +13,7 @@ The easyiest way to retrieve these object is through the `KeyVaultClient` class 
 * [Tracing](#tracing)
 * [Implementation notes](#implementation-notes)
 
-### Encrypting messages <a id="encrypt-message" />
+### <a id="encrypt-message" /> Encrypting messages
 
 By registering the plugin
 
@@ -34,7 +34,7 @@ var encryptionPolicy = new EncryptionPolicy(key, null);
 var encryptedMessage = await message.EncryptAsync(encryptionPolicy, cancellationToken).ConfigureAwait(false);
 ```
 
-### Decrypting messages <a id="decrypt-message"/> 
+### <a id="decrypt-message"/>  Decrypting messages
 
 By registering the plugin
 
@@ -53,7 +53,7 @@ var decryptionPolicy = new EncryptionPolicy(null, keyResolver);
 var decryptedMessage = await encryptedMessage.DecryptAsync(decryptionPolicy, cancellationToken).ConfigureAwait(false);
 ```
 
-### Using lazy initialization <a id="lazy-initialization"/>
+### <a id="lazy-initialization"/> Using lazy initialization
 
 Encryption policy can be costructed with lazy encryption key initialization. The encryption key will be resolved
 when it's first used. The default implementation caches the key. For example:
@@ -66,11 +66,11 @@ var encryptionPolicy = new EncryptionPolicy(o =>
 });
 ```
 
-## Tracing <a id="tracing" />
+## <a id="tracing" /> Tracing
 The component supports Event Source tracing out of the box. The Event Source name can be retreived from
 `Dealogic.ServiceBus.Azure.Encryption.Tracing.EventSourceName`.
 
-## Implementation notes <a id="implementation-notes" />
+## <a id="implementation-notes" /> Implementation notes
 
 - when encrypting a message two new custom values will be added to the Message's property bag:
   - **encryptiondata**: contains the nessesary metadata for decryption
