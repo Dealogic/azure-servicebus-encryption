@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dealogic.ServiceBus.Azure.Encryption", "src\Dealogic.ServiceBus.Azure.Encryption\Dealogic.ServiceBus.Azure.Encryption.csproj", "{4E663967-04A9-4BBE-AACD-45701B38B4ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{D7BA51DD-5B95-43AF-AFBE-95C1180EE728}"
+	ProjectSection(SolutionItems) = preProject
+		build\dealogic.snk = build\dealogic.snk
+		GitVersion.yml = GitVersion.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dealogic.ServiceBus.Azure.Encryption.UnitTest", "src\Dealogic.ServiceBus.Azure.Encryption.UnitTest\Dealogic.ServiceBus.Azure.Encryption.UnitTest.csproj", "{6E4772D3-8375-41C2-B93E-DC6DBF0B63B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solutionitems", "solutionitems", "{8D019701-649F-46C9-9D12-41D7C41C9C95}"
+	ProjectSection(SolutionItems) = preProject
+		LICENCE = LICENCE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E663967-04A9-4BBE-AACD-45701B38B4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E663967-04A9-4BBE-AACD-45701B38B4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E663967-04A9-4BBE-AACD-45701B38B4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E663967-04A9-4BBE-AACD-45701B38B4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E4772D3-8375-41C2-B93E-DC6DBF0B63B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E4772D3-8375-41C2-B93E-DC6DBF0B63B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E4772D3-8375-41C2-B93E-DC6DBF0B63B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E4772D3-8375-41C2-B93E-DC6DBF0B63B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D48AC107-B99C-4193-AE07-9E9D08D17713}
+	EndGlobalSection
+EndGlobal

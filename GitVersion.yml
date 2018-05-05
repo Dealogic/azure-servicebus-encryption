@@ -1,0 +1,12 @@
+assembly-versioning-scheme: MajorMinorPatch
+mode: ContinuousDelivery
+next-version: 1.0.0
+branches:
+  features?[/-]:
+    mode: ContinuousDeployment
+    tag: pre
+  hotfix(es)?[/-]:
+    mode: ContinuousDeployment
+    tag: pre
+ignore:
+  sha: []
