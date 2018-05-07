@@ -76,7 +76,7 @@ The component supports Event Source tracing out of the box. The Event Source nam
 
 ## <a id="implementation-notes" /> Implementation notes
 
-- when encrypting a message two new custom values will be added to the Message's property bag:
+- when encrypting a message one new custom value will be added to the Message's property bag:
   - **encryptiondata**: contains the nessesary metadata for decryption
 - if the encryptiondata is not provided, the message wont be decrypted
 - when encrypting the message, the original body will replaced with the encrypted body content
