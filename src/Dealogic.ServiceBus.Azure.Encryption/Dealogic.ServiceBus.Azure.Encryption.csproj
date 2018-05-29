@@ -14,7 +14,7 @@
     <AssemblyOriginatorKeyFile>dealogic.snk</AssemblyOriginatorKeyFile>
     <RepositoryUrl>https://github.com/Dealogic/azure-servicebus-encryption.git</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <Description>Encryption support for Azure Service Bus. For usage please see readme.md in the repository.</Description>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
