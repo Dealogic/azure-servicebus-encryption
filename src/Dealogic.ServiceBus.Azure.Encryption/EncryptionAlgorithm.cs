@@ -8,11 +8,6 @@
         /// <summary>
         /// The AES 256 encryption
         /// </summary>
-        AES_CBC_256,
-
-        /// <summary>
-        /// The AES GCM 256 encryption
-        /// </summary>
-        AES_GCM_256
+        AES_CBC_256
     }
 }
