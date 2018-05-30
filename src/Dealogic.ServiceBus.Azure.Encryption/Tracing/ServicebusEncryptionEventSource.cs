@@ -33,7 +33,7 @@
         [Event(1, Level = EventLevel.Informational, Message = "Encrypting message.")]
         public void EncryptingMessageStarted(string messageId)
         {
-            if (this.IsEnabled(EventLevel.Informational, Keywords.All))
+            if (this.IsEnabled(EventLevel.Informational, EventKeywords.All))
             {
                 this.WriteEvent(1, messageId);
             }
@@ -46,7 +46,7 @@
         [Event(2, Level = EventLevel.Verbose, Message = "Using key {0}")]
         public void UsingKeyForEncryption(string keyId)
         {
-            if (this.IsEnabled(EventLevel.Verbose, Keywords.All))
+            if (this.IsEnabled(EventLevel.Verbose, EventKeywords.All))
             {
                 this.WriteEvent(2, keyId);
             }
@@ -59,7 +59,7 @@
         [Event(3, Level = EventLevel.Informational, Message = "Encrypting message finished.")]
         public void EncryptingMessageFinished(string messageId)
         {
-            if (this.IsEnabled(EventLevel.Informational, Keywords.All))
+            if (this.IsEnabled(EventLevel.Informational, EventKeywords.All))
             {
                 this.WriteEvent(3, messageId);
             }
@@ -72,7 +72,7 @@
         [Event(4, Level = EventLevel.Informational, Message = "Decrypting message.")]
         public void DecryptingMessageStarted(string messageId)
         {
-            if (this.IsEnabled(EventLevel.Informational, Keywords.All))
+            if (this.IsEnabled(EventLevel.Informational, EventKeywords.All))
             {
                 this.WriteEvent(4, messageId);
             }
@@ -84,7 +84,7 @@
         [Event(6, Level = EventLevel.Verbose, Message = "Try using key resolver.")]
         public void TryUsingKeyResolver()
         {
-            if (this.IsEnabled(EventLevel.Verbose, Keywords.All))
+            if (this.IsEnabled(EventLevel.Verbose, EventKeywords.All))
             {
                 this.WriteEvent(6);
             }
@@ -97,7 +97,7 @@
         [Event(7, Level = EventLevel.Verbose, Message = "Key found {0}")]
         public void DecryptionKeyFound(string keyId)
         {
-            if (this.IsEnabled(EventLevel.Verbose, Keywords.All))
+            if (this.IsEnabled(EventLevel.Verbose, EventKeywords.All))
             {
                 this.WriteEvent(7, keyId);
             }
@@ -110,7 +110,7 @@
         [Event(8, Level = EventLevel.Verbose, Message = "Using original encryption key {0}")]
         public void TryUsingOriginalEncryptionKey(string keyId)
         {
-            if (this.IsEnabled(EventLevel.Verbose, Keywords.All))
+            if (this.IsEnabled(EventLevel.Verbose, EventKeywords.All))
             {
                 this.WriteEvent(8, keyId);
             }
@@ -123,7 +123,7 @@
         [Event(9, Level = EventLevel.Verbose, Message = "Detected encryption algorithm {0}")]
         public void DetectedEncryptionAlgorithm(string algorithm)
         {
-            if (this.IsEnabled(EventLevel.Verbose, Keywords.All))
+            if (this.IsEnabled(EventLevel.Verbose, EventKeywords.All))
             {
                 this.WriteEvent(9, algorithm);
             }
@@ -136,7 +136,7 @@
         [Event(10, Level = EventLevel.Informational, Message = "Decrypting message finished.")]
         public void DecryptingMessageFinished(string messageId)
         {
-            if (this.IsEnabled(EventLevel.Informational, Keywords.All))
+            if (this.IsEnabled(EventLevel.Informational, EventKeywords.All))
             {
                 this.WriteEvent(10, messageId);
             }
@@ -148,7 +148,7 @@
         [Event(11, Level = EventLevel.Warning, Message = "No encrypted message media type found. Skip body decryption.")]
         public void NoMediaTypeSkipBodyDecryption()
         {
-            if (this.IsEnabled(EventLevel.Warning, Keywords.All))
+            if (this.IsEnabled(EventLevel.Warning, EventKeywords.All))
             {
                 this.WriteEvent(11);
             }
@@ -160,7 +160,7 @@
         [Event(12, Level = EventLevel.Warning, Message = "No encryption data found. Skip body decryption.")]
         public void NoEncryptionDataSkipBodyDecryption()
         {
-            if (this.IsEnabled(EventLevel.Warning, Keywords.All))
+            if (this.IsEnabled(EventLevel.Warning, EventKeywords.All))
             {
                 this.WriteEvent(12);
             }
