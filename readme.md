@@ -5,7 +5,9 @@ For encrypting messages you have to set the Encryption key of the encryption pol
 the DecryptionKeyResolver parameter has to be set or the same encryption key used for encryption.
 The easyiest way to retrieve these object is through the `KeyVaultClient` class in the [Azure Key Vault Extensions package](https://www.nuget.org/packages/Microsoft.Azure.KeyVault.Extensions/)
 
-## Build status
+## Build status and NuGet
+
+NuGet download [Link](https://www.nuget.org/packages/Dealogic.ServiceBus.Azure.Encryption/)
 
 ![build status](https://dealogic.visualstudio.com/_apis/public/build/definitions/4cd19643-db3a-4dcc-b481-76a7800dd64d/12979/badge)
 
