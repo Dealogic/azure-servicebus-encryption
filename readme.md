@@ -7,9 +7,9 @@ The easyiest way to retrieve these object is through the `KeyVaultClient` class 
 
 ## Build status and NuGet
 
-NuGet download [Link](https://www.nuget.org/packages/Dealogic.ServiceBus.Azure.Encryption/)
-
 ![build status](https://dealogic.visualstudio.com/_apis/public/build/definitions/4cd19643-db3a-4dcc-b481-76a7800dd64d/12979/badge)
+
+[![NuGet Badge](https://buildstats.info/nuget/dealogic.servicebus.azure.encryption)](https://www.nuget.org/packages/dealogic.servicebus.azure.encryption/)
 
 ## Content
 
